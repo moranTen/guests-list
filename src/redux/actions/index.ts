@@ -1,9 +1,6 @@
-// src/store/chat/actions.ts
 
 import { GuestsActionTypes, FETCH_GUESTS, FETCH_GUESTS_SUCCESS, FETCH_GUESTS_FAILED
         , Guest , CHANGE_GUESTS_SUCCESS, CHANGE_GUESTS} from '../types';
-
-// TypeScript infers that this function is returning SendMessageAction
 
 export const fetchGuests = (): GuestsActionTypes => {
     return {

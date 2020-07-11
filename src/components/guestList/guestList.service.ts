@@ -41,7 +41,7 @@ export const fetchGuestsList = () => {
         ];
         setTimeout(() => {
             resolve(guests);
-        }, 1000);
+        }, 2000);
     });
 };
 

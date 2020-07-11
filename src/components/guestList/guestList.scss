@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 .h1_c {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Great Vibes', cursive;;
     font-size: 3.5em;
     line-height: 90%;
     margin-top: 50px;
@@ -13,7 +15,7 @@ header {
 
 .main {
     margin: 5% 20% 0;
-    background-color: white;
+    background-color: $white-color;
     padding: 20px;
     border-radius: 5px;
 }
@@ -21,10 +23,9 @@ header {
 ul {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
     padding: 15px;
-    border-top: 3px ridge #d7d7d7;
-    border-bottom: 3px ridge #d7d7d7;
+    border-top: 3px ridge $grey-color;
+    border-bottom: 3px ridge $grey-color;
 }
 
 li {
@@ -50,4 +51,8 @@ li {
         display: block;
         margin: .625rem 0;
     }
+}
+
+.remark{
+    font-size: 1.5rem;
 }

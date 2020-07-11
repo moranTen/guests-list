@@ -27,11 +27,11 @@ const GuestModal = (props: { isHideModal?: boolean, selectedGuest?: any, onClose
                 <div className={'modal-wrapper'}>
                     <div className={'modal-header'}>
                         <span className={'close'} onClick={props.onClose}>X</span>
-                        <h2>Manage Invintation</h2>
+                        <h2>Manage Invitation</h2>
                     </div>
                     {props.children}
                     <div className={'modal-footer'}>
-                        <button className={'btn modalBtn'} onClick={() => btnClicked(true)}>Accept</button>
+                        <button className={'btn modalBtn leftBtn'} onClick={() => btnClicked(true)}>Accept</button>
                         <button className={'btn modalBtn'} onClick={() => btnClicked(false)}>Decline</button>
                     </div>
                 </div>

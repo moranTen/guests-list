@@ -44,20 +44,12 @@ const GuestList = () => {
     }
 
     const changeGuestStatus = (isAccept: boolean) => {
-
         if (guestSelected !== null) {
-
             changeGuestInvitationStatus(guestSelected.id, isAccept).then((result: any) => {
-               
                 dispatch(changeSuccessGuests(result.id, result.isAccept));
                 setGuestModal(true)
-
-            }, error => {
-
-            });
-
+            }, error => {});
         }
-
     }
 
     return (
@@ -88,8 +80,8 @@ const GuestList = () => {
                     <div className={'modal-content'}>
                         <p>Name: {guestSelected != null ? guestSelected.userName : ""}</p>
                         <p>Email: {guestSelected != null ? guestSelected.userEmail : ""}</p>
-                        <p>Invintation Status: {guestSelected != null ? guestSelected.InvitationStatus : ""}</p>
-                        <p>Please click accept or decline {guestSelected != null ? guestSelected.userName : ""} order.</p>
+                        <p>Invitation Status: {guestSelected != null ? guestSelected.InvitationStatus : ""}</p>
+                        <p className={'remark'}>Please click accept or decline for {guestSelected != null ? guestSelected.userName : ""} order.</p>
                     </div>
                 </GuestModal>
             </div>
